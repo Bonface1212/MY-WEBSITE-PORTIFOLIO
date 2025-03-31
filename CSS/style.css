@@ -83,7 +83,7 @@ ul li a:hover {
 .text1 p {
     margin-left: 40%;
     margin-top: 3%;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', lora; 
     font-size: 14px;
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
@@ -111,4 +111,12 @@ ul li a:hover {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    max-width: 250px; ;
 }
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
