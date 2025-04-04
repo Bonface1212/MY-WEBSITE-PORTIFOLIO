@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -15,7 +20,6 @@ body {
     background-attachment: fixed;
     color: #333;
 }
-
 /* Navbar Styling */
 .navbar {
     width: 100%;
@@ -23,11 +27,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background: linear-gradient(to right, #ffffff, #00bcd4); /* Gradient background */
+    background: linear-gradient(to right, #ffffff, #00bcd4);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar .logo {
@@ -39,9 +43,8 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
-    margin-right: 50px;
+    margin-right: 70px;
+    
 }
 
 #nav-menu li {
@@ -50,25 +53,37 @@ body {
 
 #nav-menu a {
     text-decoration: none;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff;
     font-size: 1.1em;
     font-weight: bold;
     transition: color 0.3s ease;
+
 }
 
 #nav-menu a:hover {
-    color: red;
+    color: red; /* Gold color on hover */
 }
-
-/* Hamburger Icon for Mobile */
+/* Mobile Menu */
 .hamburger {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: #ffffff;
+    color: #333;
+    margin-right: 50px;
 }
 
-/* Mobile Menu */
+#nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu li {
+    display: inline;
+}
+
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -81,7 +96,7 @@ body {
         top: 70px;
         left: 0;
         width: 100%;
-        background: linear-gradient(to right, #cbcbcb, #00bcd4); /* Gradient background for mobile menu */
+        background: linear-gradient(to right, #ffffff, #00bcd4);
         text-align: center;
         padding: 20px 0;
         z-index: 100;
@@ -96,11 +111,10 @@ body {
     }
 
     #nav-menu a {
-        color: #ffffff;
+        color: #333;
         font-size: 18px;
     }
 }
-
 
 .languages-container {
     max-width: 1200px;
@@ -194,7 +208,8 @@ body {
     margin-top: 50px;
     margin-bottom: 10px;
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 10px;
 }
 
 .footer .social-media {

@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../IMAGES/education-background.jpg"); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #ffffff, #00bcd4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+#nav-menu li {
+    display: inline;
+}
+
+#nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+}
+
+#nav-menu a:hover {
+    color: red; /* Gold color on hover */
+}
+/* Mobile Menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    margin-right: 50px;
+}
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu li {
+    display: inline;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to right, #ffffff, #00bcd4);
+        text-align: center;
+        padding: 20px 0;
+        z-index: 100;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+
+    #nav-menu li {
+        padding: 10px 0;
+    }
+
+    #nav-menu a {
+        color: #333;
+        font-size: 18px;
+    }
+}
+
+
+/* Education Section */
+.education-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.education-container h1 {
+    font-size: 2.5em;
+    color: #00bcd4;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; /* Stroke effect */
+}
+
+.education-container p {
+    font-size: 1.2em;
+    color: #00bcd4; /* Text color matches the border */
+    margin-bottom: 30px;
+    border: 2px solid #00bcd4; /* Blue border */
+    background-color: #ffffff; /* White background inside the border */
+    padding: 10px; /* Space between the text and the border */
+    border-radius: 5px; /* Optional: Rounds the corners of the border */
+    display: inline-block; /* Ensures the border wraps tightly around the text */
+    text-align: center; /* Centers the text inside the border */
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.education-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.education-card h2 {
+    font-size: 1.8em;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #00bcd4;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .social-icon {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.footer-text {
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-top: 10px;
+}

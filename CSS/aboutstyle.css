@@ -166,31 +166,25 @@ body, html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
     .about-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack the image and text vertically */
         text-align: center;
     }
 
     .about-image img {
-        width: 200px;
-        height: 200px;
+        width: 100%; /* Make the image take the full width of the container */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 300px; /* Limit the maximum width of the image */
+        border-radius: 10px; /* Keep the rounded corners */
+        margin: 20px auto; /* Center the image */
     }
 
     .about-text h1 {
-        font-size: 2em;
+        font-size: 2em; /* Adjust the font size for smaller screens */
     }
 
     .about-text p {
-        font-size: 1em;
+        font-size: 1em; /* Adjust the paragraph font size */
     }
 }
 

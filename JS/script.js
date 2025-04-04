@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 });
 
+
 const roles = ["WEB DESIGNER", "PHOTOGRAPHER", "VIDEOGRAPHER", "SOFTWARE DEVELOPER"];
 let roleIndex = 0;
 let charIndex = 0;
@@ -75,7 +76,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('show');
-}

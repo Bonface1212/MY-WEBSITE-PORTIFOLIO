@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -30,11 +35,11 @@ body::before {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background: linear-gradient(to right, #ffffff, #00bcd4); /* Gradient background */
+    background: linear-gradient(to right, #ffffff, #00bcd4);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar .logo {
@@ -46,9 +51,7 @@ body::before {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
-    margin-right: 50px; 
+    
 }
 
 #nav-menu li {
@@ -61,23 +64,33 @@ body::before {
     font-size: 1.1em;
     font-weight: bold;
     transition: color 0.3s ease;
+
 }
 
 #nav-menu a:hover {
-    color: red; /* Hover color */
+    color: red; /* Gold color on hover */
 }
-
-/* Hamburger Icon for Mobile */
+/* Mobile Menu */
 .hamburger {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: #ffffff;
-    align-self: center; /* Aligns the hamburger vertically */
+    color: #333;
     margin-right: 50px;
 }
 
-/* Mobile Menu */
+#nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu li {
+    display: inline;
+}
+
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -90,11 +103,10 @@ body::before {
         top: 70px;
         left: 0;
         width: 100%;
-        background: linear-gradient(to right, #979797, #3e3e3e); /* Gradient background for mobile menu */
+        background: linear-gradient(to right, #ffffff, #00bcd4);
         text-align: center;
         padding: 20px 0;
         z-index: 100;
-        margin-right: 20px;
     }
 
     #nav-menu.show {
@@ -106,10 +118,11 @@ body::before {
     }
 
     #nav-menu a {
-        color: #00bcd4;
+        color: #333;
         font-size: 18px;
     }
 }
+
 
 /* Projects Section */
 .projects-container {
@@ -124,12 +137,19 @@ body::before {
     font-size: 2.8em;
     color: #00bcd4;
     margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; /* Stroke effect */
 }
 
 .projects-container p {
     font-size: 1.2em;
-    color: white;
+    color: #00bcd4; /* Text color matches the border */
     margin-bottom: 30px;
+    border: 2px solid #00bcd4; /* Blue border */
+    background-color: #ffffff; /* White background inside the border */
+    padding: 10px; /* Space between the text and the border */
+    border-radius: 5px; /* Optional: Rounds the corners of the border */
+    display: inline-block; /* Ensures the border wraps tightly around the text */
+    text-align: center; /* Centers the text inside the border */
 }
 
 .projects-grid {
@@ -198,6 +218,7 @@ body::before {
     margin-top: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
 }
 
 .footer .social-media {
