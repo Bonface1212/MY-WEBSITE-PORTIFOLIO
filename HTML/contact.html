@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="IMAGES/favicon.png">
-    <link rel="stylesheet" href="CSS/education.css">
+    <link rel="icon" type="image/png" href="../IMAGES/favicon.png">
+    <link rel="stylesheet" href="../CSS/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Education - Bonface Mamboleo</title>
+    <title>Contact - Bonface Mamboleo</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <a href="index.html">
-            <img src="IMAGES/Bonface Mamboleo logo.png" alt="Bonface Mamboleo" class="logo">
-        </a>
-
-        <!-- Hamburger Icon -->
+    <div class="main">
+        <div class="navbar">
+            <img src="../IMAGES/Bonface Mamboleo logo.png" alt="Bonface Mamboleo" class="logo" width="100" height="70">
+            
+            <!-- Hamburger Icon -->
             <div class="hamburger" onclick="toggleMenu()">☰</div>
             
             <!-- Navigation Menu -->
@@ -30,29 +28,29 @@
             </ul>
         </div>
 
-    <!-- Education Section -->
-    <div class="education-container">
-        <h1>My Education</h1>
-        <p>Here is a summary of my academic journey and achievements:</p>
-        <div class="education-grid">
-            <div class="education-card">
-                <h2>Professional Learning Program (PLP)</h2>
-                <p><i class="fas fa-calendar-alt"></i>On Going</p>
-                <p>Currently enrolled in a comprehensive program focused on web development, backend development, and game development.</p>
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out to me for collaborations, inquiries, or just to say hello!</p>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+254796682070">+254 796 682 070</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:mamboleobonface001@gmail.com">mamboleobonface001@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: Nairobi, Kenya</p>
             </div>
-            <div class="education-card">
-                <h2>Bachelor of Education (Science)</h2>
-                <p><i class="fas fa-calendar-alt"></i> 2022 - Present</p>
-                <p>Am currently ongoing with my studies in Moi University, specializing in Mathematics and Chemistry.</p>
-            </div>
-            <div class="education-card">
-                <h2>High School Diploma</h2>
-                <p><i class="fas fa-calendar-alt"></i> 2016 - 2020</p>
-                <p>Completed secondary education at Parklands High School with a focus on Mathematics and Chemistry.</p>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form action="https://formspree.io/f/mzzejyep" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
         </div>
     </div>
-
+    <script src="../JS/script.js"></script> 
     <!-- Footer -->
     <footer class="footer">
         <div class="social-media">
@@ -65,7 +63,5 @@
         </div>
         <p class="footer-text">© 2025 Bonface Mamboleo. All rights reserved.</p>
     </footer>
-
-    <script src="JS/script.js"></script>
 </body>
 </html>
