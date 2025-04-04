@@ -38,3 +38,38 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => { lightbox.style.display = "none"; }, 400); // Delay to match fade-out
     };
 });
+
+const roles = ["WEB DESIGNER", "PHOTOGRAPHER", "VIDEOGRAPHER", "SOFTWARE DEVELOPER"];
+let roleIndex = 0;
+let charIndex = 0;
+const typingSpeed = 150; // Speed of typing
+const erasingSpeed = 100; // Speed of erasing
+const delayBetweenRoles = 2000; // Delay before switching roles
+
+const typingElement = document.querySelector(".typing-effect");
+
+function type() {
+    if (charIndex < roles[roleIndex].length) {
+        typingElement.textContent += roles[roleIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+    } else {
+        setTimeout(erase, delayBetweenRoles);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        typingElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
+    } else {
+        roleIndex = (roleIndex + 1) % roles.length; // Move to the next role
+        setTimeout(type, typingSpeed);
+    }
+}
+
+// Start the typing effect
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(type, delayBetweenRoles);
+});
