@@ -73,3 +73,9 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, delayBetweenRoles);
 });
+
+
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('show');
+}

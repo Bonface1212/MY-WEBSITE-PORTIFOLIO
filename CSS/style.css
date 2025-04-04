@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background: linear-gradient(to right, #ffffff, #00bcd4); /* Semi-transparent background */
+    background: linear-gradient(to right, #ffffff, #00bcd4);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -38,6 +38,7 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
+    
 }
 
 #nav-menu li {
